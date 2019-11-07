@@ -1,0 +1,1 @@
+var person = prompt("Please enter a number between 8 and 128")
