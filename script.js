@@ -10,7 +10,7 @@ function buttonClick() {
     mixedChars = [];
     var numberPassword = prompt("Please enter a number between 8 and 128");
     if ((numberPassword < 8 || numberPassword > 128)){
-        alert("Invalid input!");
+        alert("Invalid input");
         return true;
     }
     var confirmSpecial = confirm ("Do you want special characters?");
