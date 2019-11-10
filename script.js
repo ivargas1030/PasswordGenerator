@@ -9,6 +9,10 @@ var password = "";
 function buttonClick() {
     mixedChars = [];
     var numberPassword = prompt("Please enter a number between 8 and 128");
+    if ((numberPassword < 8 || numberPassword > 128)){
+        alert("Invalid input!");
+        return true;
+    }
     var confirmSpecial = confirm ("Do you want special characters?");
     if(confirmSpecial){
         mixedChars = mixedChars.concat(specialcharacters);
@@ -31,18 +35,17 @@ function buttonClick() {
     
     // todo: make a for loop that runs x many times that gets a random character
     // and adds it to password
-
+        
     // for (x many times) {
+
 
         // create var "randomChar" that is a random character based on selections
         var randomChar = mixedChars[Math.floor(Math.random()*mixedChars.length)];
-
         // add randomChar to the password
         password += randomChar;
     // }
 
     // alert password
     alert(password)
-    
 
 }
