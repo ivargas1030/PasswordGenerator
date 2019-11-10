@@ -7,4 +7,4 @@ If a user selects a number between 8 and 128 they are given a series of prompts 
 The criteria are numeric, special, lowercase, and uppercase characters.
 Based on the users selections, the generator displays a unique password as a prompt and in the text box.
 
-*******Note: I attempted to create the for loop for the end but couldn't. Every code I tried would stop the prompts from generating so I just left this as is.
+*******Note: I attempted to create the for loop for the end but couldn't,therefore the generator does not output the number of characters a user chooses. Every code I tried would stop the prompts from generating so I just left this as is.
