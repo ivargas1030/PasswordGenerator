@@ -29,23 +29,25 @@ function buttonClick() {
     if(confirmUppercase){
         mixedChars = mixedChars.concat(uppercase);
     }
-
-    // todo check if (numberPassword < 8 || numberpassword > 128)
-    // alert("error") or something and return
     
     // todo: make a for loop that runs x many times that gets a random character
     // and adds it to password
+
+    //tried to do this but couldn't get the for loop
         
     // for (x many times) {
-
-
         // create var "randomChar" that is a random character based on selections
         var randomChar = mixedChars[Math.floor(Math.random()*mixedChars.length)];
         // add randomChar to the password
         password += randomChar;
     // }
 
+
     // alert password
     alert(password)
 
+    document.getElementById("display").value = password;
+
 }
+
+
